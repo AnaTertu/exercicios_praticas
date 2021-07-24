@@ -2,16 +2,69 @@
 	margin: 0;
 	padding: 0;
 }
+html,
+body {
+	height: 100%;
+}
 
 .menu {
-	width: 900px;
+	width: 80%;
 	background-color: rgb(184, 184, 218);
 	margin: 20px auto;
-	padding: 10;
+	padding: 15;
 	text-align: center;
 }
 
 .menu a {
 	font-size: 18px;
 	color: rgb(68, 18, 75);
+	border-right: 3px solid rebeccapurple;
+	padding-right: 10px;
+	padding-left: 5px;
+	text-decoration: none;
+}
+
+.menu #menu {
+	letter-spacing: 5px;
+}
+
+.indice {
+	width: 70%;
+	margin: 10% auto;
+	text-align: left;
+	font-variant: small-caps;
+	background-color: rgb(235, 232, 235);
+	line-height: 30px; /*espaço entre linhas*/
+}
+
+.indice p {
+	color: #2a0c2b;
+	font-size: 18px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-style: bold;
+	font-weight: 40px;
+	margin-top: 10px;
+	font-variant: normal;
+	text-align: center;
+	line-height: 40px;
+}
+
+.list {
+	list-style-position: inside;
+	list-style-type: decimal;
+	margin-left: 20px;
+}
+
+.list li {
+	color: rgb(68, 18, 75);
+}
+
+.list .item {
+	color: darkmagenta;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.list2 {
+	margin-top: 20px;
 }
