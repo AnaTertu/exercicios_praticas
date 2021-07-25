@@ -8,10 +8,11 @@ body {
 }
 
 .menu {
-	width: 80%;
+	width: 100%;
+	min-width: 1280px;
 	background-color: rgb(184, 184, 218);
 	margin: 20px auto;
-	padding: 15;
+	padding: 15 auto;
 	text-align: center;
 }
 

@@ -1,0 +1,46 @@
+.header {
+	width: 100%;
+	min-width: 1280px; /*em telas menores tera o mesmo tamnho que article*/
+	height: 200px;
+	background: rgb(224, 24, 197);
+}
+.center {
+	box-sizing: border-box;
+	width: 1280px;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+.article {
+	/* width: 100%; */
+	width: 1280px;
+	margin: 0 auto;
+	height: 600px;
+	background: rgb(104, 23, 107);
+}
+
+.artigo {
+	margin: auto 50px;
+}
+/*margin: top direita botton esquerda
+margin: (top e botton) (right left)*/
+.center2 {
+	box-sizing: border-box;
+	width: 1280px;
+	margin: 0 auto;
+}
+
+.artigo2 {
+	box-sizing: border-box;
+	width: 45%;
+	padding-left: 80px;
+	padding-top: 30px;
+}
+/*artigo2/3 - é preciso saber o tamanho exato do texto, pois qdo aumentado, perdem sua formatação ideal*/
+.artigo3 {
+	box-sizing: border-box;
+	width: 45%;
+	padding-left: 80px;
+	margin-top: -124px;
+	margin-left: 49%;
+}
