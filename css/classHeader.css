@@ -44,3 +44,53 @@ margin: (top e botton) (right left)*/
 	margin-top: -124px;
 	margin-left: 49%;
 }
+
+.artigo4 {
+	margin-top: 30px;
+	margin-right: -4px;
+	display: inline-block;
+	width: 600px;
+}
+
+.artigo5 {
+	margin: 30px 20px;
+	display: inline-block;
+	width: 560px;
+}
+
+.artigo6 {
+	box-sizing: border-box;
+	border: 5px solid rgba(33, 5, 34, 0.5);
+	vertical-align: top;
+	margin: 30px 20px 20px 20px;
+	display: inline-block;
+	width: 560px;
+}
+
+.artigo7 {
+	box-sizing: border-box;
+	border: 40px dotted rgba(33, 5, 34, 0.1);
+	vertical-align: top;
+	display: inline-block;
+	width: 560px;
+}
+
+.artigo8 {
+	box-sizing: border-box;
+	border-width: 20px;
+	border-style: double;
+	border-top-color: chartreuse;
+	border-left-color: rgb(239, 219, 240);
+	border-right-color: black;
+	border-bottom-color: blue;
+	vertical-align: top;
+	display: inline-block;
+	width: 560px;
+}
+
+.artigo9 {
+	outline: 30px solid blueviolet;
+	margin-bottom: 80px;
+	margin-top: 30px;
+	width: 500px;
+}
