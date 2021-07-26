@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Float e suas vantagens</title>
+		<link href="../css/float.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="father">
+			<div class="child"></div>
+			<!--child-->
+			<div class="child"></div>
+			<!--child-->
+			<div class="child"></div>
+			<!--child-->
+		</div>
+		<!--father-->
+		<div class="father">
+			<div class="child1">111</div>
+			<!--child1-->
+			<div class="child1">222</div>
+			<!--child1-->
+			<div class="child1">3333</div>
+			<!--child1-->
+			<div class="child1">4444</div>
+			<!--child1-->
+			<div style="clear: both"></div>
+			<!--calcula o tamanho real pois sem "clear: both - o float não mostra o style father.-->
+		</div>
+		<!--father-->
+		<div class="father">
+			<div class="child2">111</div>
+			<!--child2-->
+			<div class="child2">222</div>
+			<!--child2-->
+			<div class="child2">3333</div>
+			<!--child2-->
+			<div class="child2">4444</div>
+			<!--child2-->
+			<div style="clear: both"></div>
+			<!--"clear: both - limpa o float, para mostra o style father.-->
+		</div>
+		<!--father-->
+	</body>
+</html>
