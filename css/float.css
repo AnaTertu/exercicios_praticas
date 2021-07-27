@@ -18,10 +18,13 @@ body {
 	background: rgb(241, 23, 231);
 }
 
-/*.clear{
-    clear: both;
-}
-podemos chamar in line ou através da class*/
+/*
+	Usamos o Float ao invés do display: inline block; -- para criarmos os blocos -- vantagem que não gera margem extra e não necessita usar -- margin-right: -4px; -- para correção
+	.clear{
+		clear: both;
+	}
+	podemos chamar in line ou através da class
+*/
 
 .child1 {
 	box-sizing: border-box;

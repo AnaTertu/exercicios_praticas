@@ -1,0 +1,56 @@
+html,
+body {
+	height: 100%;
+}
+
+.box {
+	width: 300px;
+	height: 200px;
+	margin: 0 auto;
+	background-color: lightcoral;
+	overflow: auto; /*quando o tamanho da minha divi principal for ultrapassado*/
+}
+
+.box1 {
+	width: 300px;
+	height: auto;
+	margin: 20px auto;
+	background-color: rgb(240, 229, 128);
+	overflow: scroll;
+}
+
+.box2 {
+	width: 300px;
+	margin: 20px auto;
+	background-color: rgb(137, 240, 128);
+	overflow-x: auto;
+}
+
+.box2 > p {
+	width: 500px;
+}
+
+.box3 {
+	width: 300px;
+	height: 200px;
+	margin: 20px auto;
+	background-color: rgb(128, 145, 240);
+	overflow-x: scroll;
+} /*por causa da altura definida, o overflow fica auto no eixo y tbm*/
+
+.box3 > p {
+	width: 500px;
+}
+
+.box4 {
+	width: 300px;
+	height: 200px;
+	margin: 20px auto;
+	background-color: rgb(240, 128, 234);
+	overflow-x: hidden;
+	overflow-y: hidden;
+} /*escode o texto, não permite a movimentação*/
+
+.box4 > p {
+	width: 500px;
+}
