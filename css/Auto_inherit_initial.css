@@ -1,0 +1,74 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.father_inherit {
+	margin: 20px;
+	width: 400px;
+	height: 400px;
+	background: blueviolet;
+}
+
+.father_inherit > .child_inherit {
+	width: 200px;
+	background: rgb(221, 50, 178);
+}
+
+.father_inherit > .child_inherit > span {
+	display: inline-block;
+	width: inherit;
+	height: inherit;
+	background: inherit;
+} /*herdamos*/
+
+.father_auto {
+	/*father<width=auto não acompanha a chil, diferente da height, q acompanha*/
+	width: auto; /*vem auto por padrão*/
+	height: auto; /*por isso não é necessário expecificar*/
+	background-color: gray;
+}
+
+.child_auto {
+	width: 300px;
+	height: 200px;
+	background-color: rgb(172, 131, 172);
+}
+
+.father_auto > .child_auto > span {
+	display: inline-block;
+}
+
+.father_initial {
+	margin: 20px;
+	width: 40%;
+	height: 300px;
+	color: rgb(228, 188, 172);
+	background-color: rgb(209, 159, 159);
+	display: inline-block;
+}
+
+.child_initial {
+	margin: 20px;
+	width: 40%;
+	height: 300px;
+	color: white;
+	background-color: brown;
+	display: inline-block;
+}
+
+.child_initial > span {
+	/*reseta p/ o valor padrão do navegador*/
+	color: initial; /*retorna color padrão = black*/
+
+	/*nada se altera*/
+	margin: initial;
+	width: initial;
+	height: initial;
+	background-color: initial;
+}
