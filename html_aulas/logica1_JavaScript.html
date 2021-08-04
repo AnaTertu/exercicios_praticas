@@ -6,11 +6,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Curso Front-end na Danki Code</title>
 		<style type="text/css">
-			h1 {
+            h2{
+                margin-top: 30px;
+            }
+			h3 {
 				/*dentro do DOC*/
 				color: rgb(75, 42, 70);
 				background-color: rgb(250, 215, 247);
 			}
+            .child {
+                width: 400px;
+                height:400px;
+                border: 1px solid black;
+            }
 		</style>
 		<link href="../css/styles.css" type="text/css" rel="stylesheet" />
 	</head>
@@ -26,16 +34,63 @@
 				<a href="./conceitos_JavaScript.html">JavaScript</a>
 				<a href="./logica1_JavaScript.html">1-Lógica com JS e JQuery</a>
 				<a href="./logica2_JS.html">2-Lógica com JS e JQuery</a>
+				
 			</div>
 		</header>
         <section>
-
-
+            <h2>FOR &#40; inicialização&#59; verificação&#59; atualização &#41;</h2>
+            &#123;<h3> &#09;&nbsp;&nbsp;&nbsp;&nbsp;lógica</h3>&#125;
+            <h3>for &#40; inicio &#61; 1&#59; inicio &#60;&#61; 10&#59; inicio &#61; inicio &#43; 1 &#41;</h3>
+            &#123;<h3> &#09;&nbsp;&nbsp;&nbsp;&nbsp;console&#46;log&#40;inicio&#41;&#59;</h3>&#125;
+            <h3>for ( var inicio =0; inicio <= nomes.length - 1; inicio = inicio + 1)</h3>
+            {<h3> &#09;&nbsp;&nbsp;&nbsp;&nbsp;console.log(nomes[inicio]);</h3>}
             
-        </section>	
+            <ul>
+                <li><b>inicialização&#59;</b>&#45; uma variável para contar as vezes que a repetição ocorreu&#46;</li>
+                <li><b>verificação&#59;</b>&#45; verifica se é para a estrutura continuar repetindo o código ou não&#46;</li>
+                <li><b>atualização&#59;</b>&#45; após fazer uma repetição, atualiza a variável utilizada na <b>inicialização&#46;</b></li>
+                <li><b>Lógica</b>a ser repetida em cada interação&#46;</li>
+            </ul>
+        </section>
+        <section>
+            <div class="father">
+                <h2>Lógica em JavaScript com JQuery</h2>
+                <div class="child">par</div>
+                <div class="child">impar</div>
+                <div class="child">par</div>
+                <div class="child">impar</div>
+                <div class="child">par</div>
+                <div class="child">impar</div>
+            </div>
+        </section>
+        <div>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script>
+                console.log("Olá mundo!");
+                alert("Olá, mundo!");
+                var msg = "Ana Carolina"
+                console.log(msg);
+                $(function(){       //loopin
+                    $('body').css('background','PeachPuff');
+                    $('.child').css('width',200);
+                    $('.child').css('height',200);
+                    var index = 0;
+                    $('.father .child').each(function(){
+                        console.log(index%2);
+                        if(index % 2 == 0){
+                            $(this).css('background','blue');
+                        } else {
+                            $(this).css('background','red');
+                        }
+                        index++;
+                    })
+                    console.log(index);
+                })
+            </script>
+        </div>
         <footer class="menu">
             <div>
-                <h3> Ana Tertuliano </h3>
+                <h2> Ana Tertuliano </h2>
                 <div>
                     <a
                         class="nav-link"

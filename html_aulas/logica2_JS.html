@@ -6,16 +6,29 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Curso Front-end na Danki Code</title>
 		<style type="text/css">
-			h1 {
+            h2{
+                margin-top: 30px;
+            }
+			h3 {
 				/*dentro do DOC*/
 				color: rgb(75, 42, 70);
 				background-color: rgb(250, 215, 247);
 			}
+            .child {
+                width: 400px;
+                height:400px;
+                border: 1px solid black;
+            }
+            .child2 {
+                width: 0;
+                background-color: purple;
+                height: 100px;
+            }
 		</style>
 		<link href="../css/styles.css" type="text/css" rel="stylesheet" />
 	</head>
 	<body>
-        <header>
+		<header>
 			<div class="menu">
 				<a href="./index.html">Home</a>
 				<a href="./displayEspaco.html">Display|Espaçamentos</a>
@@ -28,9 +41,65 @@
 				<a href="./logica2_JS.html">2-Lógica com JS e JQuery</a>
 			</div>
 		</header>
+        <section>
+            <h2>Lógica com JS utilizando a biblioteca JQuery para manipular HTML e CSS</h2>
+            
+            <div class="father">
+
+                <div class="child">
+                    <div class="child2 animar"></div>
+                </div>
+
+                <div class="child">
+                        <div class="child2 animar"></div>
+                </div>
+
+                <div class="child"></div>
+                
+                <div class="child">
+                    <div class= "child2">
+                        <div class= "child2 animar"></div>
+                    </div>
+                </div>
+
+                <div class="child">
+                    <div class="child2"></div>
+                </div>
+
+            </div>
+        </section>
+        <div>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script>
+                // 1- Verificar se existe elemento filho
+                // 2-  Existe a classe x no elemento filho.
+                // 3-  Se sim, aplicar largura animando o elemento!
+                // each rodar o loopin chamando a class father que contém child
+                // this - estamos percorrendo vários objetos e o this é o filho atual que percorre o loopin
+                // find - verifica se esta class exist, e retorna o elemento do primeiro valor
+                // animate - gera animação
+                // hasclass - verifica e localiza com rapidez 
+                $(function(){
+
+                    $('.father .child').each(function(){
+
+                        var obj = $(this).find('.child2');
+
+                        if(obj.length > 0){
+                            console.log("Existe")
+                            if(obj.hasClass('animar')){
+                            obj.animate({width: '200px'},3000, function(){
+                                    console.log("Terminamos a lógica")
+                                })
+                            }
+                        }
+                    })
+                })
+            </script>
+        </div>
         <footer class="menu">
             <div>
-                <h3> Ana Tertuliano </h3>
+                <h2> Ana Tertuliano </h2>
                 <div>
                     <a
                         class="nav-link"
