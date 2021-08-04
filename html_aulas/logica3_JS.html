@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Curso Front-end na Danki Code</title>
+		<style type="text/css">
+            .father1 {
+                width: 100%;
+                height: 80px;
+                border: 2px solid black;
+            }
+            .father2 {
+                width: 100%;
+                height: 80px;
+                border: 2px solid black;
+            }
+            h2{
+                margin-top: 30px;
+            }
+
+		</style>
+		<link href="../css/styles.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<header>
+			<div class="menu">
+				<a href="./index.html">Home</a>
+				<a href="./displayEspaco.html">Display|Espaçamentos</a>
+				<a href="./float.html">Float</a>
+				<a href="./overflow.html">Overflow</a>
+				<a href="./table_list_form.html">Table|List|Form </a>
+				<a href="./base.html">Footer | Menu  &#45; tag &#60;a&#62; </a>
+				<a href="./conceitos_JavaScript.html">JavaScript</a>
+				<a href="./logica1_JavaScript.html">1-Lógica com JS e JQuery</a>
+				<a href="./logica2_JS.html">2-Lógica com JS e JQuery</a>
+				<a href="./logica3_JS.html">3-Lógica com JS e JQuery</a>
+			</div>
+		</header>
+        <section>
+            <h2>Lógica com JS utilizando a biblioteca JQuery para manipular HTML e CSS</h2>
+           
+            <div class="father1"></div>
+            <p>Acima - Altera cor de fundo, ao mexer no tamanho da tela, somente quando recarregar o navegador.</p>
+            <div class="father2"></div>
+            <p>Acima - Altera cor de fundo, ao recarregar, simultaneamente conforme mudar o tamnaho da tela ou após 2's de estar no navegador.</p>
+
+        </section>
+        <section>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <div>
+                <script>
+                    // nesta forma altera somente quando recarrega o navegador
+                
+                    $(function(){
+                        var tamanhoTela = $(window).width();
+                        if(tamanhoTela <= 580){
+                            $('.father1').css('background', 'blue');
+                        } else if(tamanhoTela <= 768){
+                            $('.father1').css('background', 'red');
+                        } else if(tamanhoTela >= 1024){
+                            $('.father1').css('background', 'purple');
+                        }
+                    })
+                </script>
+            </div>
+            <div>
+                <script>
+                    // nesta forma altera após 2's de estar no navegador
+                
+                    $(function(){
+                        function verificaTamanhoeAplicaCor(){
+                        var tamanhoTela = $(window).width();
+                        if(tamanhoTela < 320){
+                            $('.father2').css('background', 'yellow');
+                        } else if(tamanhoTela < 415){
+                            $('.father2').css('background', 'pink');
+                        }  else if(tamanhoTela < 580){
+                            $('.father2').css('background', 'blue');
+                        } else if(tamanhoTela < 768){
+                            $('.father2').css('background', 'red');
+                        } else if(tamanhoTela < 1024){
+                            $('.father2').css('background', 'purple');
+                        } else {
+                            $('.father2').css('background', 'white');
+                        }
+                    } 
+                    
+                    verificaTamanhoeAplicaCor(); //chama função no início do documento
+
+                    setInterval(function(){  //chama a função após 3's
+                        verificaTamanhoeAplicaCor();
+                    },2000);
+                    })
+
+                    $(window).resize(function(){ //chama a função no evento do JS quando redimenciono a tela
+                        verificaTamanhoeAplicaCor();
+                    })
+                </script>
+            </div>
+        </section>
+
+        <footer class="menu">
+            <div>
+                <h2> Ana Tertuliano </h2>
+                <div>
+                    <a
+                        class="nav-link"
+                        href="https://www.linkedin.com/in/ana-tertu/"
+                        title="Linkedin"
+                        target="_blank"
+                    >
+                        <span> Linkedin </span>
+                    </a>
+                    <a
+                        class="nav-link"
+                        href="https://twitter.com/AnaTertu_"
+                        title="Twitter"
+                        target="_blank"
+                    >
+                        <span> Twitter </span>
+                    </a>
+                    <a
+                        class="nav-link"
+                        href="https://www.facebook.com/AnaTertu/"
+                        title="Facebook"
+                        target="_blank"
+                    >
+                        <span> Facebook </span>
+                    </a>
+                    <a
+                        class="nav-link"
+                        href="https://www.instagram.com/ana.tertu/"
+                        title="Instagram"
+                        target="_blank"
+                    >
+                        <span> Instagram </span>
+                    </a>
+                    <a
+                        class="nav-link"
+                        href="https://github.com/AnaTertu"
+                        title="Github"
+                        target="_blank"
+                    >
+                        <span> Github </span>
+                    </a>
+                </div>
+                <div">&copy; Right Resume. All rights reserved.</div>
+            </div>
+        </footer>
+    </body>
+</html>
