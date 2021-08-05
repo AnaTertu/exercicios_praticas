@@ -1,0 +1,46 @@
+/*todos a com href*/
+a[href] {
+	background-color: rgb(212, 95, 79);
+}
+
+/*tem que ser igual*/
+a[href="https://www.linkedin.com/in/ana-tertu/"]
+{
+	background-color: rgb(212, 141, 79);
+}
+
+/*sem a tag "a" não tem prioridade*/
+[href="https://www.linkedin.com/in/ana-tertu/"]
+{
+	background-color: rgb(203, 212, 79);
+}
+
+/* * pegue todos*/
+a[href*="twitter"] {
+	background-color: rgb(117, 212, 79);
+}
+
+/* ~ procure entre os espaços do atributo*/
+a[attr~="facebook"] {
+	background-color: rgb(79, 212, 205);
+}
+
+/* *na tag a procure "insta" em qualquer lugar e pegue todos*/
+a[attr*="insta"] {
+	background-color: rgb(79, 114, 212);
+}
+
+/* | quando começar com a palavra seguida de hifen"github-Ana" */
+a[attribute|="github"] {
+	background-color: rgb(196, 79, 212);
+}
+
+/* ^ busca através de partes da palavra inicial "home" */
+a[attribute^="hom"] {
+	background-color: rgb(211, 73, 138);
+}
+
+/* $ qualquer parte final da palavra "displayEspaco"*/
+a[attr$="aco"] {
+	background-color: rgb(204, 99, 39);
+}

@@ -1,0 +1,23 @@
+input {
+	background-color: cornflowerblue;
+}
+
+input[type="text"] {
+	background-color: rgb(210, 100, 237);
+}
+
+input.text[type="text"] {
+	background-color: rgb(72, 34, 82);
+}
+
+input[type="submit"] {
+	background-color: rgb(123, 237, 100);
+}
+
+.submit[type="submit"] {
+	background-color: rgb(228, 237, 100);
+}
+
+input.pass[type="password"] {
+	background-color: rgb(184, 39, 46);
+}
