@@ -21,3 +21,52 @@ input[type="submit"] {
 input.pass[type="password"] {
 	background-color: rgb(184, 39, 46);
 }
+
+table {
+	width: 400px;
+	margin: 0 auto;
+}
+
+/*tem border para colidir = então colida*/
+table.collapse {
+	width: 500px;
+	border-collapse: collapse;
+}
+
+table.collapse tr td {
+	border: 1px solid black;
+}
+
+table._top {
+	width: 600px;
+	border-collapse: collapse;
+}
+
+table._top tr td {
+	height: 80px;
+	vertical-align: top;
+	border: 1px solid black;
+}
+
+table._middle {
+	width: 700px;
+	border-collapse: collapse;
+}
+
+table._middle tr td {
+	height: 80px;
+	vertical-align: middle;
+	border: 1px solid black;
+}
+
+._bottom {
+	width: 700px;
+	border-collapse: collapse;
+}
+
+._bottom tr td {
+	background-color: rgb(230, 226, 226);
+	height: 80px;
+	vertical-align: bottom;
+	border: 3px solid black;
+}
