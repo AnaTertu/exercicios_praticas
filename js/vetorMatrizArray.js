@@ -1,6 +1,3 @@
-// for (inicialização; verificação; atualização;)
-// lógica
-
 //Um Array é uma variável especial, que pode conter mais de um valor por vez. [0] é o primeiro elemento em um Array. [1] é o segundo. Os índices do Array começam com 0.
 
 var animais = ["birds", "cats", "dogs"]
